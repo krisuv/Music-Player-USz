@@ -61,20 +61,12 @@ namespace Odtwarzacz_muzyki
             }
         }
 
-        public void loadPlaylist(string file)
-        {
-            throw new NotImplementedException();
-        }
 
         public void playSelectedSong(ISong song)
         {
             throw new NotImplementedException();
         }
 
-        public void savePlaylist(List<ISong> songs)
-        {
-            throw new NotImplementedException();
-        }
         public void setVolumeLevel(int volumeLevel)
         {
             if(volumeLevel >= 0 && volumeLevel <= 100)
@@ -85,6 +77,17 @@ namespace Odtwarzacz_muzyki
             {
                 Console.WriteLine("Podano poziom głośności spoaza zakresu 0-100!");
             };
+        }
+
+
+        // Praca z plikami
+        public void savePlaylist(List<ISong> songs)
+        {
+            throw new NotImplementedException();
+        }
+        public void loadPlaylist(string file)
+        {
+            throw new NotImplementedException();
         }
     }
 }
